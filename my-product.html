@@ -46,10 +46,16 @@
 				padding: 10px 3px;
 			}
 			#product>li {
-				width: 31%;
+				width: 33.33333%;
 				float: left;
 				border: 1px solid #dcd8d5;
-				padding-bottom: 3px;
+				padding: 3px;
+				box-sizing: border-box;
+			}
+			#product:after{
+				content: "";
+				clear:both;
+				display: block;
 			}
 			#product>li .desc {
 				width: 97%;
