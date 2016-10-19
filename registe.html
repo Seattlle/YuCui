@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>注册</title>
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.js"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<script type="text/javascript" charset="utf-8">
+			//mui.init();
+		</script>
+		<style type="text/css">
+			.ycsz{
+				display: block;
+				margin: 0 auto;
+			}
+			.inputS{
+				border:1px solid #b07855;
+				border-radius:5px;
+			}
+			.inputS>span,.inputS>input{
+				display: inline-block;
+				margin:7px auto;
+			}
+			.inputS>input{
+				width:80%;
+				height: 30px;
+				color:#808080;
+				border:none;
+				border-left: 1px solid #232323;
+				border-radius: 0;
+			}
+			.mui-checkbox.mui-left label, .mui-radio.mui-left label{
+				padding-left: 48px;
+			}
+			.buttonS{
+				width: 100%;
+				background-color: #b07a56;
+				border-radius: 5px;
+				color: #ffffff;
+				padding:9px 10px;
+			}
+			.mui-table-view:before,.mui-table-view-cell:after,.mui-table-view:after{
+				display: none;
+			}
+			.xieyi{
+				color:#070604;
+				text-decoration: underline!important;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mui-inner-wrap">
+		<header class="mui-bar mui-bar-nav">
+			<a id="offCanvasShow" href="#offCanvasSide" class="mui-icon mui-action-back mui-icon-back mui-pull-left">返回</a>
+			<h1 class="mui-title">注册</h1>
+		</header>
+		<div class="mui-content">
+			<img src="img/ycsz.png" class="ycsz"/>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<div class="inputS">
+						<span class="mui-icon mui-icon-person"></span>
+						<input type="text" name="username"/>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="inputS">
+						<span class="mui-icon mui-icon-locked"></span>
+						<input type="password" name="password1"/>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="inputS">
+						<span class="mui-icon mui-icon-locked"></span>
+						<input type="password" name="password2"/>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="buttonS">注册</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<p class="mui-pull-left">
+						我已阅读并同意<a href="#" class="xieyi">玉翠用户协议</a>
+					</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</body>
+
+</html>

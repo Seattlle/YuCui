@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>个人中心</title>
+    <script src="js/mui.min.js"></script>
+    <script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+    <style>
+    	section{
+    		height: 150px;
+		    background: url('./img/head_bg.png');
+		    background-size: 100% 140px;
+		    padding-top:20px;
+    	}
+    	section .head {
+		    width: 90px;
+		    height: 90px;
+		    position: relative;
+		    border-radius: 50%;
+		    margin: auto;
+		    background: #fff;
+		    color: #242424;
+		    margin-bottom: 5px;
+		}
+		section .head-img {
+		    width: 86px;
+		    height: 86px;
+		    position: relative;
+		    z-index: 1;
+		    margin: 2px;
+		    border-radius: 50%;
+		}
+		section .name{
+			color:#FFFFFF;
+		}
+		.text{
+			font-family: Muiicons;
+			font-weight: bold;
+		}
+		.mui-icon{
+			font-weight: bold;
+		}
+		.point{
+			width:5px;
+			height:5px;
+			background: url(img/point.png) no-repeat;
+			background-size: 5px 5px;
+		}
+		.out{
+			position: absolute;
+			bottom: 80px;
+			left: 50%;
+			padding:7px 13px;
+			margin-left: -47px;
+			background-color: #b7132e;
+			color:#ffffff;
+		}
+		.mui-navigate-right:after, .mui-push-right:after{
+			color:#000000;
+			font-weight:bold;
+		}
+    </style>
+</head>
+<body>
+	<div class="mui-inner-wrap">
+		<header class="mui-bar mui-bar-nav">
+			<!--<a id="offCanvasShow" href="#" class="mui-icon mui-action-back mui-icon-back mui-pull-left">返回</a>-->
+			<h1 class="mui-title">个人中心</h1>
+		</header>
+		<footer class="mui-bar mui-bar-footer">
+			<ul>
+				<li>
+					<div>
+						<i class="mui-icon mui-icon-home"></i>
+						<span class="title">玉翠精品</span>
+					</div>
+				</li>
+				<li class="middle">
+					<div>
+						<i class="mui-icon mui-icon-videocam"></i>
+						<span class="title">产品发布</span>
+					</div>
+				</li>
+				<li class="active">
+					<div>
+						<i class="mui-icon mui-icon-contact"></i>
+						<span class="title">个人中心</span>
+					</div>
+				</li>
+			</ul>
+		</footer>
+		<div class="mui-content">
+			<section>
+				<div class="head">
+					<img src="img/head.png" class="head-img"/>
+				</div>
+				<span class="name">Seattle</span>
+			</section>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-text-left">
+					<a class="mui-navigate-right">
+						<i class="mui-icon mui-icon-settings"></i>
+						<span class="text">我的预约</span>
+					</a>			
+				</li>
+				<li class="mui-table-view-cell mui-text-left">
+					<a class="mui-navigate-right">
+						<i class="mui-icon mui-icon-person"></i>
+						<span class="text">个人信息</span>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-text-left">
+					<a class="mui-navigate-right">
+						<i class="mui-icon mui-icon-star"></i>
+						<span class="text">我的产品</span>
+					</a>
+				</li>
+			</ul>
+			<div class="out">
+				退出登录
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+
+	<head>
+		<title>代码在线DIY、演示</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	</head>
+	<script src="js/qrcode.js" type="text/javascript" charset="utf-8"></script>
+
+
+	<body>
+		<div id="qrcode" title="">
+			<!--<canvas width="96" height="96" style="display: none;"></canvas>-->
+			<!--<img alt="Scan me!" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAD9ElEQVR4Xu2d23arMAxEyf9/dLrIUzHK8mYqUpLs8xpZlmd0NZRzW5blvvzTv/t9v/XtdousqXTNFKV7zfQe+X09rQQcQaxZVgKaAT2qTgKOItYsvyMgyaXUpjHn0hqQ2FTl91EPkaFnI3LVfhIwIJeQTcBfZSRg6LqMANiGJl5JwCUy1LuJnBHwrhGQDCykwCae/czTiI1pESa6R7vI+R91YRzE6MJZyBE9EiABOz8ijjNzvvV3qscIAG3oV6WgtDMhIFkDhptOGqakVkhAEMoScMEibAqC0+msEyDeTWSedRTj/qagF6agBOzKYWi0kf0+ZhAjoBBA0sJNo7IjA1xyEpaAN6gBXxcBs3Cjv6dPxJL82pmC6Plmcm97HS0BM2rh70bA/p0ndBkH8Z2KSYAEbJyEdFxTrzoggGrAAX1/FqU9d3KLScAl3dSfDzlR8BYvZknASW5gBBS3oSdhXaqVgGW53cnE8kpWir3O7J7++WgSIAEAASMAgHSmiASciS7QLQEDSGTIqXAlQAI+kEiXjWiz4kUsOuRFXVDX4c5swLpslACKwElRSrcn03qZFZI5oMu7jIBwEJOAvS+fGgGkoBADiEwVpiRSugo8ca4umfWsqAhLwPZv2SUgvC8iBbULXKLHCABEriIkdSYyJQGEOZKSiLd1ynTVia6zEXskoOkltLRxkAAJ6EtCJORJq2oKCjn5GALI+VMvIZ0C2T8Bu+pmyI1tmt9JM4Pb0NEICZh/ZEwCim/PpZEzOmCqp3wLpOs2NEkdXZFEU0kK3KkEkI/2deXu5CCE2EcuDb+2SPR3nb+MAAmYUyABc4yMAIDRToTkZKrXFESR+iUnAfCBTIBtvIR4Mn2pd1b0ca8efGSEOhd6IhajGSyUgAC0ziUS0IlmoOvrCCBzQIAjWkLzJFGWXDXT/VOnQHZLwBwmCZhjtBvESKdkBBSPBAHWpYgpKECOeiBR/TEEdIIyAkdAqsAmOXg2dNEb0/T8xEZ0G5oa0OWlEtCYl42ALQJGAHhok2YAU9AQbqQNrdLdJQkg7CZF8MzDEnDpbWhS38iaR2Pwjv9/QOIQ62HJo8VXO4UEgNRFvDl1CgmQgC0CqSeRGpR6cpKW6DkuFwHU8BmYCWjPpuVEFz2HBAxMdnVGEhBO9BIAptVZ+qlaTrLGFERRKuRoyP9eSqdlMj+QJqCy8XI1IOVAAkA/nT4PIKRIgARsEKDpDaUg4oFEJo2AxLvTy7h0XTIr4Ms4Ai6RkYA9SkYA8BzSBRkBTUCagpp6/BTIdF1bBABHahOhRqe1IzE0vYogjQJ6KJ8Yna6RgAt+vr4i0whIXXyyzggwAnYu8uoa8APN9Q7OY088xQAAAABJRU5ErkJggg=="
+			style="display: block;"></div>-->
+
+		<input type="text" id="getval" value="www.baidu.com">
+		<button id="send">点击更换验证码</button>
+		<script>
+			window.onload = function() {
+				var qrcode = new QRCode(document.getElementById("qrcode"), {
+					width: 96, //设置宽高
+					height: 96
+				});
+				//      qrcode.makeCode("http://www.78oa.com");
+				document.getElementById("send").onclick = function() {
+					qrcode.makeCode(document.getElementById("getval").value);
+				}
+			}
+		</script>
+
+	</body>
+
+</html>

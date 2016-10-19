@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>登录</title>
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.js"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<style type="text/css">
+			.ycsz{
+				display: block;
+				margin: 0 auto;
+			}
+			.inputS{
+				border:1px solid #b07855;
+				border-radius:5px;
+			}
+			.inputS>span,.inputS>input{
+				display: inline-block;
+				margin:7px auto;
+			}
+			.inputS>input{
+				width:80%;
+				height: 30px;
+				color:#808080;
+				border:none;
+				border-left: 1px solid #232323;
+				border-radius: 0;
+			}
+			.mui-checkbox.mui-left label, .mui-radio.mui-left label{
+				padding-left: 48px;
+			}
+			.buttonS{
+				width: 100%;
+				background-color: #b07a56;
+				border-radius: 5px;
+				color: #ffffff;
+				padding:9px 10px;
+				cursor: pointer;
+			}
+			.mui-table-view:before,.mui-table-view-cell:after,.mui-table-view:after{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mui-inner-wrap">
+		<header class="mui-bar mui-bar-nav">
+			<a id="offCanvasShow" href="#" class="mui-icon mui-action-back mui-icon-back mui-pull-left">返回</a>
+			<h1 class="mui-title">登录</h1>
+		</header>
+		<div class="mui-content">
+			<img src="img/ycsz.png" class="ycsz"/>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<div class="inputS">
+						<span class="mui-icon mui-icon-person"></span>
+						<input type="text" name="username"/>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="inputS">
+						<span class="mui-icon mui-icon-locked"></span>
+						<input type="password" name="password"/>
+					</div></li>
+				<li class="mui-table-view-cell" style="padding:0">
+					<div class="mui-input-row mui-checkbox mui-left mui-pull-right">
+					  <label style="color:#562b1a" for="reuser">记住用戶</label>
+					  <input name="checkbox1" value="Item 1" type="checkbox" id="reuser">
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="buttonS">登录</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="buttonS goto" data-href="registe.html">立即注册</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</body>
+</html>

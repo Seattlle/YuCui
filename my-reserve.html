@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的预约</title>
+		<script src="js/mui.min.js"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+		<style>
+			.mui-icon {
+				font-weight: bold;
+			}
+			.mui-navigate-right:after,
+			.mui-push-right:after {
+				color: #000000;
+				font-weight: bold;
+			}
+			.mui-table-view-cell{
+				padding:8px 6px;
+			}
+			.mui-table-view-cell>img{
+				width:90px;
+				height:90px;
+				display:inherit;
+				float: left;
+			}
+			.mui-table-view-cell>.p_right{
+				display: inline-block;
+				width: 70%;			
+				float: left;
+				text-align: left;
+				padding-left:10px;
+			}
+			.mui-table-view-cell>.p_right>span{
+				display: block;
+			}
+			.mui-table-view-cell>.p_right>span>p,
+			.mui-table-view-cell>span>p{
+				display: inline;
+			}
+			.mui-table-view-cell>span{
+				display: inline;
+				color:#af7a58;
+			}
+			.mui-table-view-cell ._buttom{
+				display: inline;
+				padding:4px 6px;
+				background: #af7a58;	
+				color:#ffffff;		
+				cursor: pointer;	
+			}
+			.mui-table-view-cell .descript{
+				font-size: 16px;
+				color:#af7a58;
+			}
+			.mui-table-view:before,
+			.mui-table-view:after{
+				display: none;
+			}
+			.mui-table-view-cell{
+				width:97%;
+				margin:0 auto;
+			}
+			.mui-media{
+				border: 1px solid #cdc2bc;
+				padding:6px 0;
+				margin-bottom: 15px;
+			}
+			.mui-table-view-cell:after{
+				left:0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-inner-wrap">
+			<header class="mui-bar mui-bar-nav">
+				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left">返回</a>
+				<h1 class="mui-title">我的预约</h1>
+			</header>
+			<footer class="mui-bar mui-bar-footer">
+				<ul>
+					<li>
+						<div>
+							<i class="mui-icon mui-icon-home"></i>
+							<span class="title">玉翠精品</span>
+						</div>
+					</li>
+					<li class="middle">
+						<div>
+							<i class="mui-icon mui-icon-videocam"></i>
+							<span class="title">产品发布</span>
+						</div>
+					</li>
+					<li class="active">
+						<div>
+							<i class="mui-icon mui-icon-contact"></i>
+							<span class="title">个人中心</span>
+						</div>
+					</li>
+				</ul>
+			</footer>
+			<div class="mui-content">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell mui-media">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<span class="mui-pull-left" style="color:#000000">下单时间:<span class="x_time">2015-10-26</span></span>
+								<span class="mui-pull-right">预约时间:<span class="y_time">2015-10-26</span></span>
+							</li>
+							<li class="mui-table-view-cell">
+								<img src="img/head.png"/>
+								<div class="p_right">
+									<span class="name">产品名称</span>
+									<span style="font-size:14px;color:#8f8f94;">产品详情:<p>产品详情产品详情产品详情产品详情产品详情产品详情产品详情产品详情产品详情</p></span>
+								</div>
+							</li>
+							<li class="mui-table-view-cell">
+								<span class="mui-pull-left">备注:<p class="descript">备注详情备注详情备注详情备注详情</p></span>
+							</li>
+							<li class="mui-table-view-cell">
+								<span class="mui-pull-left">预约待处理</span>
+								<div class="mui-pull-right">
+									<span class="_buttom">添加备注</span>
+									<span class="_buttom">取消预订</span>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<span class="mui-pull-left" style="color:#000000">下单时间:<span class="x_time">2015-10-26</span></span>
+								<span class="mui-pull-right">预约时间:<span class="y_time">2015-10-26</span></span>
+							</li>
+							<li class="mui-table-view-cell">
+								<img src="img/head.png"/>
+								<div class="p_right">
+									<span class="name">产品名称</span>
+									<span style="font-size:14px;color:#8f8f94;">产品详情:<p>产品详情产品详情产品详情产品详情产品详情产品详情产品详情产品详情产品详情</p></span>
+								</div>
+							</li>
+							<li class="mui-table-view-cell">
+								<span class="mui-pull-left">备注:<p class="descript">备注详情备注详情备注详情备注详情</p></span>
+							</li>
+							<li class="mui-table-view-cell">
+								<span class="mui-pull-left">预约待处理</span>
+								<div class="mui-pull-right">
+									<span class="_buttom">添加备注</span>
+									<span class="_buttom">取消预订</span>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="mui-table-view-cell mui-media">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">
+								<span class="mui-pull-left" style="color:#000000">下单时间:<span class="x_time">2015-10-26</span></span>
+								<span class="mui-pull-right">预约时间:<span class="y_time">2015-10-26</span></span>
+							</li>
+							<li class="mui-table-view-cell">
+								<img src="img/head.png"/>
+								<div class="p_right">
+									<span class="name">产品名称</span>
+									<span style="font-size:14px;color:#8f8f94;">产品详情:<p>产品详情产品详情产品详情产品详情产品详情产品详情产品详情产品详情产品详情</p></span>
+								</div>
+							</li>
+							<li class="mui-table-view-cell">
+								<span class="mui-pull-left">备注:<p class="descript">备注详情备注详情备注详情备注详情</p></span>
+							</li>
+							<li class="mui-table-view-cell">
+								<span class="mui-pull-left">预约待处理</span>
+								<div class="mui-pull-right">
+									<span class="_buttom">添加备注</span>
+									<span class="_buttom">取消预订</span>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+</html>

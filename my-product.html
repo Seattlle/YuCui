@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的产品</title>
+		<script src="js/mui.min.js"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+		<style>
+			.mui-icon {
+				font-weight: bold;
+			}
+			.mui-navigate-right:after,
+			.mui-push-right:after {
+				color: #000000;
+				font-weight: bold;
+			}
+			.mui-media>a>span,
+			.mui-media>a>img {
+				vertical-align: middle;
+			}
+			.mui-media .pull-right {
+				position: absolute;
+				right: 33px;
+			}
+			.mui-content>.mui-table-view:first-child {
+				margin-top: 0;
+			}
+			.mui-table-view-cell:after {
+				left: 0;
+			}
+			.upload {
+				position: absolute;
+				right: 10px;
+				top: 10px;
+				color: #ffffff;
+			}
+			#product {
+				width: 100%;
+				padding: 10px 3px;
+			}
+			#product>li {
+				width: 31%;
+				float: left;
+				border: 1px solid #dcd8d5;
+				padding-bottom: 3px;
+			}
+			#product>li .desc {
+				width: 97%;
+				display: block;
+				margin:0 auto;
+			}
+			#product>li .name {
+				width: 90%;
+				text-align: left;
+				display: block;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			#product>li .price {
+				font-size: 0.8em;
+				position: relative;
+				font-weight: bold;
+				float: left;
+				letter-spacing: -2px;
+			}
+			#product>li .price:after {
+				content: "00";
+				font-size: 12px;
+				position: absolute;
+			}
+			#product>li .state {
+				float: right;
+				font-size: 0.8em;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-inner-wrap">
+			<header class="mui-bar mui-bar-nav">
+				<h1 class="mui-title">我的产品</h1>
+				<span class="upload">上传</span>
+			</header>
+			<div class="mui-content">
+				<ul id="product">
+					<li>
+						<img src="img/head.png" alt="" />
+						<div class="desc">
+							<span class="name">情侣戒指玫瑰金</span>
+							<div class="bot">
+								<span class="price">￥2550.</span>
+								<span class="state">出售中</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<img src="img/head.png" alt="" />
+						<div class="desc">
+							<span class="name">情侣戒指玫瑰金</span>
+							<div class="bot">
+								<span class="price">￥2550.</span>
+								<span class="state">出售中</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<img src="img/head.png" alt="" />
+						<div class="desc">
+							<span class="name">情侣戒指玫瑰金</span>
+							<div class="bot">
+								<span class="price">￥2550.</span>
+								<span class="state">出售中</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+</html>
